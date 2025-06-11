@@ -26,3 +26,25 @@ pizza_and_prices = [[2, 'pepperoni'], [6, 'pineapple'], [1, 'cheese'], [3, 'saus
 # Testing to see if new list is correct
 # print(pizza_and_prices)
 
+# Sorting 2D list in ascending order
+pizza_and_prices.sort()
+
+# Extracting the cheapest pizza
+cheapest_pizza = pizza_and_prices[0]
+
+# Extracting most expensive pizza
+priciest_pizza = pizza_and_prices[-1]
+
+# The most expensive pizza is sold out, removing it from the list
+pizza_and_prices.pop()
+
+# Checking the order of sorted list
+# print(pizza_and_prices)
+
+# Adding new pizza topping into the list 
+pizza_and_prices.insert(-2, [2.5, 'peppers'])
+
+# Extracting the three cheapest slices
+three_cheapest = pizza_and_prices[:3]
+
+print(three_cheapest)
